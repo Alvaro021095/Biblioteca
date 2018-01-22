@@ -1,0 +1,11 @@
+version: '2'
+services:
+    biblioteca-postgresql:
+        image: postgres:9.6.5
+        # volumes:
+        #     - ~/volumes/jhipster/Biblioteca/postgresql/:/var/lib/postgresql/data/
+        environment:
+            - POSTGRES_USER=Biblioteca
+            - POSTGRES_PASSWORD=
+        ports:
+            - 5432:5432
